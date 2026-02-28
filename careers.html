@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Green Shield Roofing Careers: Open Positions at Green Shield Roofing, Central Texas">
+  <title>Careers | Green Shield Roofing</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="assets/logo_pix/logo.ico" />
+  <style>
+    /* Simple card layout for job listings */
+    .job-cards {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      margin-top: 2rem;
+    }
+    .job-card {
+      display: block;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .job-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .job-card h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      color: #006633;
+    }
+    .job-card p {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header loaded via JS -->
+  <header></header>
+
+  <!-- Hero Section -->
+  <section class="hero article-hero">
+    <picture class="hero-background">
+      <source srcset="assets/gsr_hiring.png" type="image/webp">
+      <source srcset="assets/gsr_hiring.png" type="image/jpeg">
+      <img src="assets/gsr_hiring.png" alt="Careers" fetchpriority="high">
+    </picture>
+    <div class="container">
+      <h1>Green Shield Careers</h1>
+      <h1>Open Positions</h1>
+      <h2>Join a fast growing, fun-focused team aimed at transforming the roofing industry.</h2>
+    </div>
+  </section>
+
+  <!-- Job Listings -->
+  <section class="article-content">
+    <div class="container">
+      <div class="job-cards">
+        
+        <!-- Storm Restoration Sales Specialist Card -->
+        <a href="careers-sales.html" class="job-card">
+          <h3>Storm Restoration Sales Specialist</h3>
+          <p>Work with homeowners in storm-affected areas, inspect roofs, prepare estimates, sign construction agreements, and manage projects. Training provided.</p>
+          <p><b>Compensation package:</b> Commission-based/profit sharing ($100k-$150k avg, but no cap).</p>
+        </a>
+        
+        <!-- Neighborhood Canvasser Card -->
+        <a href="careers-canvasser.html" class="job-card">
+          <h3>Neighborhood Canvasser</h3>
+          <p>Engage with homeowners in storm-affected neighborhoods and set appointments for roof inspections. That's it! Training provided.</p> 
+            <p><b>Compensation package:</b> $150.00 per appointment set + daily/weekly bonus incentives.</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Prefer to Apply by Phone or Email?</h2>
+      <p>
+        Call <a href="tel:8303692408">830-369-2408</a> or email your resume to <a href="mailto:recruiting@greenshieldroofing.com">recruiting@greenshieldroofing.com</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer loaded via JS -->
+  <footer></footer>
+  <script src="js/navigation.js"></script>
+  <script src="js/footer.js"></script>
+</body>
+</html>

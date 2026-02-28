@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Apply for Neighborhood Canvasser at Green Shield Roofing">
+  <title>Apply - Neighborhood Canvasser | Green Shield Roofing</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="assets/logo_pix/logo.ico" />
+  <style>
+    form {
+      max-width: 500px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    form label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+    form input {
+      width: 100%;
+      padding: 0.6rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    form button {
+      background-color: #006633;
+      color: white;
+      padding: 0.8rem 1.2rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #004d26;
+    }
+  </style>
+</head>
+<body>
+  <header></header>
+
+   <!-- Hero Section -->
+  <section class="hero article-hero">
+    <picture class="hero-background">
+      <source srcset="assets/gsr_hiring.png" type="image/webp">
+      <source srcset="assets/gsr_hiring.png" type="image/jpeg">
+      <img src="assets/gsr_hiring.png" alt="Careers" fetchpriority="high">
+    </picture>
+    <div class="container">
+      <h1>Green Shield Careers</h1>
+      <h1>Apply Now: Neighborhood Canvasser</h1>
+      <h2>Our Neighborhood Canvassers are the tip of the spear. Your role will be to go to storm-impacted areas, engage with homeowners, and spread our brand. All you will need to do is set inspection appointments. Our team of certified inspectors does the rest!</h2>
+    </div>
+  </section>
+
+
+  <form action="https://formsubmit.co/recruiting@greenshieldroofing.com" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="_subject" value="New Neighborhood Canvasser Application">
+    <input type="hidden" name="_captcha" value="false">
+    
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="resume">Upload Resume (PDF/DOC)</label>
+    <input type="file" id="resume" name="attachment" accept=".pdf,.doc,.docx" required>
+
+    <button type="submit">Submit Application</button>
+  </form>
+
+  <footer></footer>
+  <script src="js/navigation.js"></script>
+  <script src="js/footer.js"></script>
+</body>
+</html>

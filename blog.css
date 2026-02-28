@@ -1,0 +1,344 @@
+/* Blog Specific CSS */
+
+/* Blog Hero Section */
+#blog-hero {
+    padding: 80px 0;
+}
+
+#blog-hero h1 {
+    color: var(--lime-1); /* Light color for contrast against dark background */
+}
+
+#blog-hero p {
+    color: var(--lime-3); /* Light color with slight tint for secondary text */
+}
+
+/* Blog Grid Layout */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+/* Blog Card Styling */
+.blog-card {
+    background-color: var(--lime-1);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+}
+
+.blog-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.15);
+}
+
+.blog-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.blog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.blog-card:hover .blog-image img {
+    transform: scale(1.05);
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: var(--lime-9);
+}
+
+.blog-category {
+    background-color: var(--lime-3);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.blog-content h3 {
+    color: var(--lime-12);
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.blog-content p {
+    color: var(--lime-11);
+    margin-bottom: 15px;
+}
+
+.read-more {
+    color: var(--lime-9);
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+}
+
+.read-more:after {
+    content: "→";
+    margin-left: 5px;
+    transition: transform 0.3s;
+    display: inline-block;
+}
+
+.blog-card:hover .read-more:after {
+    transform: translateX(5px);
+}
+
+/* Pagination */
+.blog-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.blog-pagination a, 
+.blog-pagination span {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.blog-pagination a {
+    background-color: var(--lime-3);
+    color: var(--lime-12);
+    transition: background-color 0.3s;
+}
+
+.blog-pagination a:hover {
+    background-color: var(--lime-5);
+}
+
+.blog-pagination .current-page {
+    background-color: var(--lime-9);
+    color: var(--lime-1);
+}
+
+.blog-pagination .next-page,
+.blog-pagination .prev-page {
+    font-weight: bold;
+}
+
+/* Individual Blog Post Page Styles */
+.blog-post-content {
+    background-color: var(--lime-1);
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.blog-header h1 {
+    color: var(--lime-12);
+    margin-bottom: 15px;
+}
+
+.blog-header .blog-meta {
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.blog-header .blog-date {
+    margin-right: 15px;
+}
+
+.blog-feature-image {
+    margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.blog-feature-image img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-text h2 {
+    color: var(--lime-9);
+    margin: 30px 0 15px;
+}
+
+.blog-text h3 {
+    color: var(--lime-11);
+    margin: 25px 0 12px;
+}
+
+.blog-text h4 {
+    color: var(--lime-12);
+    margin: 20px 0 10px;
+}
+
+.blog-text p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.blog-text ul,
+.blog-text ol {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.blog-text li {
+    margin-bottom: 10px;
+}
+
+.blog-text blockquote {
+    background-color: var(--lime-2);
+    padding: 20px;
+    border-left: 4px solid var(--lime-9);
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.blog-author {
+    display: flex;
+    align-items: center;
+    background-color: var(--lime-2);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.author-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.author-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.author-bio h3 {
+    color: var(--lime-12);
+    margin-bottom: 5px;
+}
+
+.author-bio p {
+    color: var(--lime-11);
+    font-size: 14px;
+}
+
+.blog-share {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.blog-share span {
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.share-buttons {
+    display: flex;
+}
+
+.share-buttons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--lime-3);
+    color: var(--lime-12);
+    margin-right: 10px;
+    text-align: center;
+    line-height: 40px;
+    transition: background-color 0.3s;
+}
+
+.share-buttons a:hover {
+    background-color: var(--lime-9);
+    color: var(--lime-1);
+}
+
+.blog-related {
+    margin-top: 60px;
+}
+
+.blog-related h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--lime-9);
+}
+
+.related-posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Conclusion styling */
+.conclusion {
+    background-color: var(--lime-2);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.conclusion h2 {
+    color: var(--lime-9);
+    margin-top: 0;
+}
+
+/* Responsive Blog Styles */
+@media (max-width: 768px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .blog-post-content {
+        padding: 20px;
+    }
+    
+    .blog-header h1 {
+        font-size: 28px;
+    }
+    
+    .blog-author {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .author-image {
+        margin: 0 auto 15px;
+    }
+    
+    .related-posts {
+        grid-template-columns: 1fr;
+    }
+}

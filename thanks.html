@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Green Shield Roofing</title>
+    <link rel="preload" href="assets/green_shield_roofing.webp" as="image" type="image/webp" fetchpriority="high">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/logo_pix/logo.ico">
+    <style>
+        .thank-you-container {
+            text-align: center;
+            padding: 80px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .checkmark {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: block;
+            stroke-width: 2;
+            stroke: var(--lime-9);
+            stroke-miterlimit: 10;
+            box-shadow: 0 0 0 var(--lime-9);
+            animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+            margin: 0 auto 30px;
+        }
+
+        .checkmark__circle {
+            stroke-dasharray: 166;
+            stroke-dashoffset: 166;
+            stroke-width: 2;
+            stroke-miterlimit: 10;
+            stroke: var(--lime-9);
+            fill: none;
+            animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+        }
+
+        .checkmark__check {
+            transform-origin: 50% 50%;
+            stroke-dasharray: 48;
+            stroke-dashoffset: 48;
+            animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+        }
+
+        @keyframes stroke {
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes scale {
+
+            0%,
+            100% {
+                transform: none;
+            }
+
+            50% {
+                transform: scale3d(1.1, 1.1, 1);
+            }
+        }
+
+        @keyframes fill {
+            100% {
+                box-shadow: inset 0 0 0 80px var(--lime-9);
+            }
+        }
+
+        .thank-you-heading {
+            color: var(--lime-9);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .thank-you-message {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Using your existing btn class for the return button */
+    </style>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1406885693928086');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1406885693928086&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16951116622"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16951116622');
+</script>
+
+    
+<script>
+  window.addEventListener('load', function() {
+    if (document.location.href.indexOf('/thanks.html') != -1) {
+   gtag('event', 'conversion', {'send_to': 'AW-16951116622/hMZ4CN3qsMcbEM6G9pI_'});
+
+    }
+  });
+</script>
+<script>
+  document.addEventListener(
+    "mousedown",
+    function (e) {
+      if (e.target.closest('[href^="tel:"]')) {
+           gtag('event', 'conversion', {'send_to': 'AW-16951116622/RECOCNjrsMcbEM6G9pI_'});
+
+      }
+    },
+    true,
+  )
+</script>
+    
+</head>
+
+<body>
+    <!-- Header -->
+    <header></header>
+    <!-- Thank You Section -->
+    <section class="thank-you-container">
+        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+            <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+            <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+        </svg>
+
+        <h1 class="thank-you-heading">Thank You!</h1>
+        <p class="thank-you-message">
+            We've received your request and appreciate your interest in Green Shield Roofing.
+            One of our roofing specialists will contact you within 24 hours to discuss your project.
+        </p>
+    <div style="max-width: 400px; margin: 20px auto;">
+  <video width="100%" height="auto" controls>
+    <source src="assets/videos/Welcome to Green Shield Roofing.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+    </div>
+        
+        <p class="thank-you-message">
+            If you need immediate assistance, please call us at <strong>(512) 540-6388</strong>.
+        </p>
+        <a href="index.html" class="btn">Return to Homepage</a>
+    </section>
+
+    <!-- Footer -->
+    <footer></footer>
+    <script src="js/navigation.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+
+</html>
