@@ -5,9 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="logo-icon">
                     <a href="index.html">
                     <picture>
-                        <source type="image/webp" srcset="assets/logo_pix/logo_white_transparent.webp">
-                        <source type="image/jpeg" srcset="assets/logo_pix/logo_white_transparent.png">
-                        <img src="assets/logo_pix/logo_white_transparent.png" alt="Green Shield Roofing Logo" height="100px" width="282px"/>
+                        <source type="image/jpeg" srcset="assets/logo_verstera_roofing_ctr_png.png">
+                        <img src="assets/logo_verstera_roofing_ctr_png.png" alt="Verstera Roofing Logo" height="100px" width="282px"/>
                     </picture>
                     </a>
                 </div>
