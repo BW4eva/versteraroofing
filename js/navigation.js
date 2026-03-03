@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </ul>
             </nav>
             <div class="mobile-contact-button">
-                <a href="https://greenshieldroofing.com/instant-roof-estimate.html" class="btn">Get Free Instant Estimate</a>
+                <a href="https://versteraroofing.com/instant-roof-estimate.html" class="btn">Get Free Instant Estimate</a>
             </div>
         </div>
     `;
