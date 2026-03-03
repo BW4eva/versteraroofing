@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <!-- <h3>Green Shield Roofing</h3> -->
+                    <!-- <h3>Verstera Roofing</h3> -->
                    <!-- <p>Providing superior roofing solutions with integrity and excellence.</p> -->
                    
                 </div>
@@ -44,13 +44,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     <h3>Contact Info</h3>
                     <ul>
                         <li class="tel"><a href="tel:5125406388">Phone:(512) 540-6388</a></li>
-                        <li>Email: contact@greenshieldroofing.com</li>
+                        <li>Email: contact@versteraroofing.com</li>
                         
                     </ul>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2026 Green Shield Roofing. All Rights Reserved.</p>
+                <p>&copy; 2026 Verstera Roofing. All Rights Reserved.</p>
          </div>
         </div>
     `;
