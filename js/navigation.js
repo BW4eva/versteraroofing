@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <a href="index.html">
                     <picture>
                         <source type="image/png" srcset="assets/Verstera-Roofing_BLK-MULTI_ctr.png">
-                        <img src="assets/Verstera-Roofing_BLK-MULTI_ctr.png" alt="Verstera Roofing Logo" height="200px" width="482px"/>
+                        <img src="assets/Verstera-Roofing_BLK-MULTI_ctr.png" alt="Verstera Roofing Logo" height="150px" width="320px"/>
                     </picture>
                     </a>
                 </div>
