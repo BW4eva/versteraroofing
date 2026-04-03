@@ -19,14 +19,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="footer-column">
                     <h3>Locations</h3>
                     <ul>
-                        <li><iframe src="https://www.google.com/maps/place/Verstera+Roofing/@30.588255,-97.73297,242401m/data=!3m2!1e3!4b1!4m6!3m5!1s0xe8378ec716b107:0xad97f3a517d3a80b!8m2!3d30.588255!4d-97.73297!16s%2Fg%2F11xfhkml7p?hl=en&entry=ttu&g_ep=EgoyMDI2MDMzMC4wIKXMDSoASAFQAw%3D%3D"></iframe></li>
-                          <!--<li><a href="guadalupe-county.html">Guadalupe County</a></li>-->
-                         <!-- <li><a href="bell-county.html">Bell County</a></li>-->
-                         <!-- <li><a href="travis-county.html">Travis County</a></li>-->
-                         <!-- <li><a href="bexar-county.html">Bexar County</a></li>-->
-                         <!-- <li><a href="williamson-county.html">Williamson County</a></li>-->
-                          <!--<li><a href="comal-county.html">Comal County</a></li>-->
+                         <li><a href="austin-texas.html">Austin</a></li>
+                         <li><a href="round-rock-texas.html">Round Rock</a></li>
+                         <li><a href="georgetown-texas.html">Georgetown</a></li>
+                         <li><a href="leander-texas.html">Leander</a></li>
+                         <li><a href="cedar-park-texas.html">Cedar Park</a></li>
+                         <li><a href="liberty-hill-texas.html">Liberty Hill</a></li>
+                         <li><a href="harker-heights-texas.html">Harker Heights</a></li>
+                         <li><a href="san-antonio-texas.html">San Antonio</a></li>
                     </ul>
+                    
                 </div>
                 <div class="footer-column">
                     <h3>Services</h3>
