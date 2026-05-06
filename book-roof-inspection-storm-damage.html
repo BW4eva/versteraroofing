@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roof Inspection Services After Hail | Verstera Roofing Austin TX</title>
+    <title>Emergency Roof Inspection After Hail | Verstera Roofing Austin TX</title>
     <meta name="description"
         content="We provide emergency inspection and restoration roofing services for hail and wind damaged roofs in Central Texas, Austin, Georgetown, Killeen, Temple, Round Rock, New Braunfels, San Marcos, Boerne, Fredericksburg, and San Antonio. Free inspection, insurance claim assistance, fast service, roofing contractor in Cental Texas. ">
     <link rel="preload" href="assets/hail_damaged_roof11.JPG" as="image" type="image/JPG" fetchpriority="high">
@@ -113,7 +113,7 @@
       color: #7ee855 !important;
     }
 
- /* Right column: form panel */
+    /* Right column: form panel */
     .lp-hero-right {
       position: relative;
       z-index: 1;
@@ -373,6 +373,19 @@
 
     /* ── FIX #1 & #2: Mobile responsive ── */
     @media (max-width: 768px) {
+      .mobile-cta-btn {
+        display: inline-block !important;
+        background-color: #6bba47;
+        color: white;
+        font-size: 1.05rem;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 16px 28px;
+        border-radius: 6px;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+      }
       /* Stack hero columns vertically on mobile */
       .lp-hero {
         grid-template-columns: 1fr;
@@ -434,18 +447,17 @@ src="https://www.facebook.com/tr?id=1406885693928086&ev=PageView&noscript=1"
 <body>
     <!-- Header -->
     <header>
-        <!-- FIX #3: justify-content flex-start so logo sits left -->
-        <div class="container header-content" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;">
-            <div class="logo">
+        <div class="container header-content" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:nowrap; gap:12px;">
+            <div class="logo" style="flex-shrink:0; min-width:0;">
                 <div class="logo-icon">
                     <picture>
                         <source type="image/webp" srcset="assets/Verstera-Roofing_BLK-MULTI_ctr.png">
                         <source type="image/jpeg" srcset="assets/Verstera-Roofing_BLK-MULTI_ctr.png">
-                        <img src="assets/Verstera-Roofing_BLK-MULTI_ctr.png" alt="Verstera Roofing Logo" height="100px" width="282px"/>
+                        <img src="assets/Verstera-Roofing_BLK-MULTI_ctr.png" alt="Verstera Roofing Logo" style="height:auto; width:100%; max-width:200px; display:block;"/>
                     </picture>
                 </div>
             </div>
-            <h3><a href="tel:512-540-6388" style="color: white; background-color: #6bba47; padding: 15px 20px; display: inline-block; text-decoration: none; border-radius: 5px;">✆ Call Now (512) 540-6388</a></h3>
+            <h3 style="margin:0; flex-shrink:0;"><a href="tel:512-540-6388" style="color:white; background-color:#6bba47; padding:12px 14px; display:inline-block; text-decoration:none; border-radius:5px; font-size:clamp(0.72rem, 2.5vw, 1rem); white-space:nowrap;">✆ Call Now (512) 540-6388</a></h3>
         </div>
     </header>
 
@@ -461,6 +473,9 @@ src="https://www.facebook.com/tr?id=1406885693928086&ev=PageView&noscript=1"
             <h3>Get your roof inspected now before the damage worsens and gets harder to document.</h3>
             <p></p>
             <h2>If we find damage, we'll provide you with photos and the ammunition to file a successful insurance claim. </h2>
+            <p></p>
+            <!-- Mobile-only CTA button -->
+            <a href="#book-form" style="display:none;" class="mobile-cta-btn">📋 Book My Free Inspection Now</a>
             <p></p>
             <h3>Here's our offer:</h3>
             <p></p>
