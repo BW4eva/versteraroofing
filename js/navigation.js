@@ -47,7 +47,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">About</a>
                         <ul class="dropdown-menu">
-                            <li><a href="instant-roof-estimate.html">Instant Estimate</a></li>       
                             <li><a href="gallery.html">Project Gallery</a></li>
                             <li><a href="blog.html">Learning Center/Blog</a></li>
                             <li><a href="blog-roofing-FAQs.html">Roofing FAQs</a></li>
