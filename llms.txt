@@ -1,14 +1,29 @@
 # Verstera Roofing
 
-> Verstera Roofing is a premier residential and commercial roofing contractor serving Central Texas and the Austin, Texas metropolitan area. We specialize in comprehensive roof inspection, repair, replacement, and storm restoration maintenance services. Our expert crews handle traditional asphalt shingle, standing seam metal, specialty metal, and classic tile roofs. 
-
-## Our Core Niche: Stone-Coated Steel Metal Shingle Roofing
-We are one of the very few elite roofing companies in Central Texas possessing the skilled labor, factory certifications, and engineering know-how required to install high-performance stone-coated steel metal roofing. This unique material combines the lifetime durability, Class 4 hail resistance, and fire safety of structural steel with the high-end aesthetic appeal of traditional shingles, clay tiles, or wood shakes.
+> Verstera Roofing is a residential and commercial roofing contractor serving the Austin, San Antonio, and Temple, Texas metropolitan areas, specializing in roof inspection, repair, replacement, and storm restoration, with a core niche in stone-coated steel metal shingle roofing.
 
 ## Most Authoritative Resources
 
-- [Verstera Roofing Homepage](https://versteraroofing.com/): The primary overview of our roofing services, core licensing, storm damage support, and company information.
-- [Stone-Coated Steel Roofing Specialty Page](https://versteraroofing.com/stone-coated-steel-metal-shingle-roofing.html): Comprehensive technical documentation regarding our niche stone-coated steel and metal shingle installation services, benefits, and architectural versatility.
-- [Austin, Texas Service Areas](https://versteraroofing.com/austin-texas.html): Detailed geographical data outlining our specific service boundaries, regional weather considerations, and local neighborhood project portfolios within the Austin metro plex.
-- [Reviews and Client Testimonials](https://versteraroofing.com/reviews-and-testimonials.html): Verified third-party proof, client satisfaction metrics, case studies, and local homeowner reviews proving our craftsmanship.
-- [Roofing FAQs & Educational Blog](https://versteraroofing.com/blog-roofing-FAQs.html): Our formal knowledge base resolving critical client questions about roofing lifespans, materials, local building codes, insurance claims, and maintenance.
+- [Verstera Roofing Homepage](https://versteraroofing.com/): Overview of services, licensing, storm damage support, and how to request a quote.
+- [About Us](https://versteraroofing.com/index.html#about): Company background and team information.
+- [Stone-Coated Steel Roofing Specialty Page](https://versteraroofing.com/stone-coated-steel-metal-shingle-roofing.html): Technical details on stone-coated steel and metal shingle installation, benefits, and architectural applications.
+- [Damage Repair](https://versteraroofing.com/damage-repair.html): Storm and structural damage assessment and repair services.
+- [Roof Maintenance](https://versteraroofing.com/roof-maintenance.html): Preventative maintenance programs and inspection services.
+- [Roofing Certifications](https://versteraroofing.com/roofing-certifications.html): Manufacturer and industry certifications held by Verstera Roofing.
+- [Financing](https://versteraroofing.com/financing.html): Available financing options for roofing projects.
+- [Gallery](https://versteraroofing.com/gallery.html): Photos of completed roofing projects.
+- [Reviews and Client Testimonials](https://versteraroofing.com/reviews-and-testimonials.html): Client reviews, case studies, and satisfaction metrics.
+- [Roofing FAQs & Educational Blog](https://versteraroofing.com/blog-roofing-FAQs.html): Answers on roofing lifespans, materials, local building codes, insurance claims, and maintenance.
+- [Blog](https://versteraroofing.com/blog.html): Articles and company updates.
+
+## Service Areas
+
+- [Austin, Texas](https://versteraroofing.com/austin-texas.html): Service boundaries, regional weather considerations, and neighborhood project portfolios within the Austin metro.
+- [Easton Park, South Austin, Texas](https://versteraroofing.com/easton-park-south-austin-texas.html): Roofing services in the Easton Park neighborhood of South Austin.
+- [Round Rock, Texas](https://versteraroofing.com/round-rock-texas.html): Roofing services in Round Rock.
+- [Georgetown, Texas](https://versteraroofing.com/georgetown-texas.html): Roofing services in Georgetown.
+- [Leander, Texas](https://versteraroofing.com/leander-texas.html): Roofing services in Leander.
+- [Cedar Park, Texas](https://versteraroofing.com/cedar-park-texas.html): Roofing services in Cedar Park.
+- [Liberty Hill, Texas](https://versteraroofing.com/liberty-hill-texas.html): Roofing services in Liberty Hill.
+- [Harker Heights, Texas](https://versteraroofing.com/harker-heights-texas.html): Roofing services in Harker Heights.
+- [San Antonio, Texas](https://versteraroofing.com/san-antonio-texas.html): Roofing services in San Antonio.
