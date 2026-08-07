@@ -13,23 +13,23 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="assets/logo_pix/logo.ico">
     <!-- Structured data for local business -->
+<!--JSON Code--> 
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "RoofingContractor",
-        "name": "Verstera Roofing",
-        "image": "assets/Verstera_roofing.webp",
-        "telephone": "(512) 540-6388",
-        "email": "contact@versteraroofing.com",
-        "address": {
-            "@type": "PostalAddress",
-            "addressRegion": "TX"
-        },
-        "url": "https://versteraroofing.com/metal-roofs.html",
-        "priceRange": "$$",
-        "areaServed": ["Guadalupe County", "Bell County", "Travis County", "Bexar County", "Williamson County", "Comal County"]
-    }
-    </script>
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Metal Roof Installation and Repair",
+  "provider": { "@id": "https://versteraroofing.com/#organization" },
+  "areaServed": [
+    { "@type": "City", "name": "Austin, TX" },
+    { "@type": "City", "name": "Georgetown, TX" },
+    { "@type": "City", "name": "San Antonio, TX" },
+    { "@type": "City", "name": "Harker Heights, TX" },
+    { "@type": "City", "name": "Temple, TX" }
+  ],
+  "description": "Standing seam metal roofing installation and repair for residential and commercial properties in Austin & Central Texas."
+}
+</script>
 
 <!-- Meta Pixel Code -->
 <script>
