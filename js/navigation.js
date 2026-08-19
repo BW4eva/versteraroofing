@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <ul class="dropdown-menu">
                             <li><a href="residential-roofing.html">Residential Roofing</a></li>
                             <li><a href="commercial-roofing.html">Commercial Roofing</a></li>
-                           <li><a href="roof-inspection-services.html">Roof Maintenance Services</a></li>
+                            <li><a href="roof-inspection-services.html">Roof Inspection Services</a></li>
                             <li><a href="roof-maintenance.html">Roof Maintenance Services</a></li>
                             <li><a href="damage-repair.html">Hail & Wind Damage Repair</a></li>
                             <li><a href="leak-repair.html">Leak Repair</a></li>
