@@ -726,6 +726,15 @@
     .faq-item.open .faq-answer { display: block; }
     .warn-mark { color: #d97706; font-weight: 700; }
     .x-mark { color: #dc2626; font-weight: 700; }
+
+    /* Mobile layout fixes */
+    @media (max-width: 900px) {
+      /* Stop wide content (table, long words) from pushing the column off-center */
+      .article-content .container { grid-template-columns: minmax(0, 1fr); }
+      .article-body, .article-sidebar { min-width: 0; }
+      /* Hide Related Services and Service Areas on mobile */
+      .article-sidebar .related-services { display: none; }
+    }
   </style>
 
 </body>
