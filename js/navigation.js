@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <ul class="dropdown-menu">
                             <li><a href="gallery.html">Project Gallery</a></li>
                             <li><a href="blog.html">Learning Center/Blog</a></li>
-                            <li><a href="blog-roofing-FAQs.html">Roofing FAQs</a></li>
+                            <li><a href="roofing-faqs.html">Roofing FAQs</a></li>
                             <li><a href="financing.html">Financing</a></li>
                             <li><a href="roofing-certifications.html">Certifications & Memberships</a></li>
                             <li><a href="reviews-and-testimonials.html">Reviews & Testimonials</a></li>
