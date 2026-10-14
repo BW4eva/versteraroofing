@@ -8,6 +8,90 @@
   <title>Texas Hail Resistant Roof Guide | Verstera Roofing</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/x-icon" href="assets/logo_pix/logo.ico" />
+  <!-- Mobile layout fixes for this post -->
+  <style>
+    .article-content .container,
+    .article-body {
+      box-sizing: border-box;
+      max-width: 100%;
+      min-width: 0;
+    }
+    .article-body {
+      overflow-wrap: break-word;
+    }
+    .article-body img {
+      max-width: 100%;
+      height: auto;
+    }
+    .table-wrap {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: 1.5rem 0;
+    }
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+    .compare-table caption {
+      text-align: left;
+      font-weight: bold;
+      padding-bottom: 0.5rem;
+    }
+    .compare-table th,
+    .compare-table td {
+      text-align: left;
+      padding: 0.6rem;
+      border-bottom: 1px solid #eee;
+      vertical-align: top;
+    }
+    .compare-table thead th {
+      border-bottom: 2px solid #ccc;
+    }
+    @media (max-width: 600px) {
+      /* Stack the comparison table into cards so nothing is wider than the screen */
+      .compare-table thead { display: none; }
+      .compare-table,
+      .compare-table caption,
+      .compare-table tbody,
+      .compare-table tr,
+      .compare-table th,
+      .compare-table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .compare-table tr {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 0.5rem 0.75rem;
+        margin-bottom: 1rem;
+      }
+      .compare-table th[scope="row"] {
+        font-size: 1.05rem;
+        padding: 0.35rem 0 0.5rem;
+        border-bottom: 1px solid #ddd;
+      }
+      .compare-table td {
+        border-bottom: none;
+        padding: 0.35rem 0;
+      }
+      .compare-table td::before {
+        content: attr(data-label) ": ";
+        font-weight: bold;
+      }
+      /* Center the CTA button, which sits outside .container */
+      .cta-section .btn {
+        display: block;
+        width: fit-content;
+        max-width: calc(100% - 32px);
+        margin: 1rem auto 0;
+        text-align: center;
+      }
+    }
+  </style>
   <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -245,7 +329,7 @@ src="https://www.facebook.com/tr?id=1406885693928086&ev=PageView&noscript=1"/>
           underlayment, and flashing detail</strong> all directly affect how a roof performs when real hail arrives.
         </p>
 
-          <div style="margin: 20px 0;">
+        <div style="margin: 20px 0;">
           <img
             src="assets/georgetown_texas_class4_hail_resistant_shingles.JPG"
             alt="Class 4 impact resistant roofing installed on a Georgetown, TX home by Verstera Roofing"
@@ -257,7 +341,6 @@ src="https://www.facebook.com/tr?id=1406885693928086&ev=PageView&noscript=1"/>
             Class 4 impact resistant roofing installed on a Georgetown, TX home by Verstera Roofing
           </p>
         </div>
-       
 
         <h2>Which Hail Resistant Roofing Material Is Best for Texas?</h2>
         <p>
@@ -266,35 +349,35 @@ src="https://www.facebook.com/tr?id=1406885693928086&ev=PageView&noscript=1"/>
           choice depends on how long you're staying, your budget, and how often your area takes direct hits.
         </p>
 
-        <div style="overflow-x:auto; -webkit-overflow-scrolling:touch; margin:1.5rem 0;">
-          <table style="width:100%; min-width:520px; border-collapse:collapse; font-size:0.95rem;">
-            <caption style="text-align:left; font-weight:bold; padding-bottom:0.5rem;">Hail resistant roofing materials compared (Texas)</caption>
+        <div class="table-wrap">
+          <table class="compare-table">
+            <caption>Hail resistant roofing materials compared (Texas)</caption>
             <thead>
               <tr>
-                <th scope="col" style="text-align:left; padding:0.6rem; border-bottom:2px solid #ccc;">Material</th>
-                <th scope="col" style="text-align:left; padding:0.6rem; border-bottom:2px solid #ccc;">Texas lifespan</th>
-                <th scope="col" style="text-align:left; padding:0.6rem; border-bottom:2px solid #ccc;">Installed cost</th>
-                <th scope="col" style="text-align:left; padding:0.6rem; border-bottom:2px solid #ccc;">Best for</th>
+                <th scope="col">Material</th>
+                <th scope="col">Texas lifespan</th>
+                <th scope="col">Installed cost</th>
+                <th scope="col">Best for</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th scope="row" style="text-align:left; padding:0.6rem; border-bottom:1px solid #eee;">Class 4 asphalt shingles</th>
-                <td style="padding:0.6rem; border-bottom:1px solid #eee;">15–30 years</td>
-                <td style="padding:0.6rem; border-bottom:1px solid #eee;">$550–$865 per square</td>
-                <td style="padding:0.6rem; border-bottom:1px solid #eee;">Owners staying under 10 years or on a budget</td>
+                <th scope="row">Class 4 asphalt shingles</th>
+                <td data-label="Texas lifespan">15–30 years</td>
+                <td data-label="Installed cost">$550–$865 per square</td>
+                <td data-label="Best for">Owners staying under 10 years or on a budget</td>
               </tr>
               <tr>
-                <th scope="row" style="text-align:left; padding:0.6rem; border-bottom:1px solid #eee;">Standing seam metal</th>
-                <td style="padding:0.6rem; border-bottom:1px solid #eee;">40–70 years</td>
-                <td style="padding:0.6rem; border-bottom:1px solid #eee;">2–3x shingles</td>
-                <td style="padding:0.6rem; border-bottom:1px solid #eee;">Long-term owners in high-frequency hail zones</td>
+                <th scope="row">Standing seam metal</th>
+                <td data-label="Texas lifespan">40–70 years</td>
+                <td data-label="Installed cost">2–3x shingles</td>
+                <td data-label="Best for">Long-term owners in high-frequency hail zones</td>
               </tr>
               <tr>
-                <th scope="row" style="text-align:left; padding:0.6rem; border-bottom:1px solid #eee;">Stone coated steel</th>
-                <td style="padding:0.6rem; border-bottom:1px solid #eee;">40–70 years</td>
-                <td style="padding:0.6rem; border-bottom:1px solid #eee;">2–3x shingles</td>
-                <td style="padding:0.6rem; border-bottom:1px solid #eee;">Long-term owners who want a traditional look</td>
+                <th scope="row">Stone coated steel</th>
+                <td data-label="Texas lifespan">40–70 years</td>
+                <td data-label="Installed cost">2–3x shingles</td>
+                <td data-label="Best for">Long-term owners who want a traditional look</td>
               </tr>
             </tbody>
           </table>
@@ -310,7 +393,7 @@ src="https://www.facebook.com/tr?id=1406885693928086&ev=PageView&noscript=1"/>
           roof size.
         </p>
         <p>
-          <a href="https://www.tamko.com//">TAMKO</a>, for example, manufactures several verified Class 4 lines, including <strong>Heritage IR, StormFighter FLEX, and
+          <a href="https://www.tamko.com/">TAMKO</a>, for example, manufactures several verified Class 4 lines, including <strong>Heritage IR, StormFighter FLEX, and
           HailGuard</strong>. Verstera Roofing installs these systems and works directly with the manufacturer's
           warranty program, so material and workmanship coverage is backed by the company that made the product.
         </p>
@@ -324,8 +407,8 @@ src="https://www.facebook.com/tr?id=1406885693928086&ev=PageView&noscript=1"/>
           steel's durability, and its granulated surface can conceal or reduce the visibility of minor dents.
         </p>
 
-        <p> Learn more about the history of stone coated steel on our blog post <a href="https://versteraroofing.com/blog-history-of-stone-coated-steel-metal-roofing.html">here</a>!</p>
-        
+        <p>Learn more about the history of stone coated steel on our blog post <a href="https://versteraroofing.com/blog-history-of-stone-coated-steel-metal-roofing.html">here</a>!</p>
+
         <p>
           The trade-off is upfront cost: both typically run <strong>two to three times</strong> the installed price
           of asphalt shingles. That premium is easiest to justify for long-term owners or homes in high-frequency
