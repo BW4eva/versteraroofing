@@ -114,18 +114,33 @@ src="https://www.facebook.com/tr?id=1406885693928086&ev=PageView&noscript=1"/>
   ]
 }
 </script>
-  <!-- Mobile-friendly comparison table (scoped to this post) -->
+  <!-- Post-specific styles: comparison table, quick answer, mobile layout -->
   <style>
-    .article-body .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1.5rem 0; }
-    .article-body .comparison-table { width: 100%; min-width: 520px; border-collapse: collapse; font-size: 0.95rem; }
+    /* Keep the article column from ever growing wider than the screen */
+    .article-body { min-width: 0; max-width: 100%; overflow-wrap: break-word; }
+    .article-body .article-image { display: block; width: 100%; max-width: 100%; height: auto; margin: 1.5rem auto; }
+
+    .article-body .table-wrap { width: 100%; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1.5rem 0; }
+    .article-body .comparison-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
     .article-body .comparison-table th,
     .article-body .comparison-table td { padding: 0.65rem 0.75rem; border-bottom: 1px solid #ddd; text-align: left; vertical-align: top; }
     .article-body .comparison-table thead th { background: #f4f4f4; }
     .article-body .comparison-table th[scope="row"] { font-weight: 600; }
-    .article-body .table-note { font-size: 0.85rem; opacity: 0.8; }
     .article-body .quick-answer { border-left: 4px solid currentColor; padding: 0.75rem 1rem; margin: 1.5rem 0; background: rgba(0,0,0,0.03); }
+
+    /* Phones: stack each table row as a card instead of a wide table */
     @media (max-width: 600px) {
-      .article-body .comparison-table { font-size: 0.85rem; }
+      .article-body .table-wrap { overflow-x: visible; }
+      .article-body .comparison-table,
+      .article-body .comparison-table tbody,
+      .article-body .comparison-table tr,
+      .article-body .comparison-table th,
+      .article-body .comparison-table td { display: block; width: 100%; box-sizing: border-box; }
+      .article-body .comparison-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+      .article-body .comparison-table tr { border: 1px solid #ddd; border-radius: 6px; margin-bottom: 0.75rem; overflow: hidden; }
+      .article-body .comparison-table th[scope="row"] { background: #f4f4f4; border-bottom: 1px solid #ddd; }
+      .article-body .comparison-table td { border-bottom: none; padding-top: 0.4rem; padding-bottom: 0.4rem; font-size: 0.9rem; }
+      .article-body .comparison-table td::before { content: attr(data-label) ": "; font-weight: 600; }
     }
   </style>
 
@@ -192,7 +207,6 @@ src="https://www.facebook.com/tr?id=1406885693928086&ev=PageView&noscript=1"/>
         </p>
         <div class="table-wrap" role="region" aria-label="Stone coated steel vs. asphalt shingles comparison table" tabindex="0">
           <table class="comparison-table">
-            <caption class="table-note">Swipe sideways on mobile to see the full table.</caption>
             <thead>
               <tr>
                 <th scope="col">Category</th>
@@ -201,13 +215,13 @@ src="https://www.facebook.com/tr?id=1406885693928086&ev=PageView&noscript=1"/>
               </tr>
             </thead>
             <tbody>
-              <tr><th scope="row">Installed cost per sq. ft.</th><td>$10–$18</td><td>$4.50–$8.50</td></tr>
-              <tr><th scope="row">Typical service life</th><td>40–60 years</td><td>20–30 years</td></tr>
-              <tr><th scope="row">UL 2218 hail rating</th><td>Class 4 (standard)</td><td>Class 1–2 standard; Class 3–4 at a premium</td></tr>
-              <tr><th scope="row">Wind resistance</th><td>120–140 mph; some systems 160 mph</td><td>60–90 mph standard; premium up to 150 mph</td></tr>
-              <tr><th scope="row">Weight per sq. ft.</th><td>1.3–1.7 lb</td><td>2–4 lb</td></tr>
-              <tr><th scope="row">Solar reflectance (light colors)</th><td>0.25–0.50+</td><td>0.04–0.25 (cool shingles up to 0.27)</td></tr>
-              <tr><th scope="row">Manufacturer warranty</th><td>50-year limited or lifetime; often transferable</td><td>25–30 years; often prorated</td></tr>
+              <tr><th scope="row">Installed cost per sq. ft.</th><td data-label="Stone Coated Steel">$10–$18</td><td data-label="Architectural Shingles">$4.50–$8.50</td></tr>
+              <tr><th scope="row">Typical service life</th><td data-label="Stone Coated Steel">40–60 years</td><td data-label="Architectural Shingles">20–30 years</td></tr>
+              <tr><th scope="row">UL 2218 hail rating</th><td data-label="Stone Coated Steel">Class 4 (standard)</td><td data-label="Architectural Shingles">Class 1–2 standard; Class 3–4 at a premium</td></tr>
+              <tr><th scope="row">Wind resistance</th><td data-label="Stone Coated Steel">120–140 mph; some systems 160 mph</td><td data-label="Architectural Shingles">60–90 mph standard; premium up to 150 mph</td></tr>
+              <tr><th scope="row">Weight per sq. ft.</th><td data-label="Stone Coated Steel">1.3–1.7 lb</td><td data-label="Architectural Shingles">2–4 lb</td></tr>
+              <tr><th scope="row">Solar reflectance (light colors)</th><td data-label="Stone Coated Steel">0.25–0.50+</td><td data-label="Architectural Shingles">0.04–0.25 (cool shingles up to 0.27)</td></tr>
+              <tr><th scope="row">Manufacturer warranty</th><td data-label="Stone Coated Steel">50-year limited or lifetime; often transferable</td><td data-label="Architectural Shingles">25–30 years; often prorated</td></tr>
             </tbody>
           </table>
         </div>
@@ -257,7 +271,7 @@ src="https://www.facebook.com/tr?id=1406885693928086&ev=PageView&noscript=1"/>
           over-roof installation is being considered on a structure near its design limit.
         </p>
 
-        <img src="assets/san_antonio_stonecoatedsteel2.JPG" alt="Close-up of Class 4 hail-resistant stone coated steel roof panels on a Texas home" style="max-width:100%; height:auto;" loading="lazy" decoding="async">
+        <img src="assets/san_antonio_stonecoatedsteel2.JPG" alt="Close-up of Class 4 hail-resistant stone coated steel roof panels on a Texas home" class="article-image" style="max-width:100%; height:auto;" loading="lazy" decoding="async">
 
         <h2>Stone Coated Steel vs. Shingles: Which Costs Less Over Time?</h2>
         <p>
