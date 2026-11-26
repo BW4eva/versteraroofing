@@ -700,13 +700,22 @@ footer {
     justify-self: end;
     padding: 24px;
     text-align: left;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    box-shadow: none;
 }
 
 .hero-lead-form h3 {
-    color: var(--lime-11);
+    color: #fff;
     font-size: 22px;
     margin-bottom: 16px;
+}
+
+/* Spam honeypot: never shown to people */
+.hero-lead-form .hero-lead-hp {
+    display: none !important;
 }
 
 .hero-lead-row {
@@ -715,8 +724,7 @@ footer {
     gap: 12px;
 }
 
-.hero-lead-form input,
-.hero-lead-form textarea {
+.hero-lead-form input {
     width: 100%;
     padding: 12px;
     margin-bottom: 12px;
@@ -728,13 +736,7 @@ footer {
     font-size: 16px;
 }
 
-.hero-lead-form textarea {
-    min-height: 84px;
-    resize: vertical;
-}
-
-.hero-lead-form input:focus,
-.hero-lead-form textarea:focus {
+.hero-lead-form input:focus {
     outline: 2px solid var(--lime-9);
     outline-offset: 0;
     border-color: var(--lime-9);
