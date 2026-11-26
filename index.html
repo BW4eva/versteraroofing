@@ -247,12 +247,38 @@ src="https://www.facebook.com/tr?id=1406885693928086&ev=PageView&noscript=1"
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
                 url('assets/carlos_completed_3.webp') no-repeat center center/cover;
     ">
-    <div class="container">
-      <h1>Austin's #1 Choice for Hail Resistant Roofing</h1>
-            <p></p>
-      <h2>We back our work with the strongest warranties in the industry </h2>
-      <p></p>
-      <a href="https://versteraroofing.com/index.html#contact" class="btn">Book Free Consultation Now</a>
+    <div class="container hero-flex">
+      <div class="hero-text">
+        <h1>Austin's #1 Choice for Hail Resistant Roofing</h1>
+              <p></p>
+        <h2>We back our work with the strongest warranties in the industry </h2>
+        <p></p>
+        <a href="https://versteraroofing.com/index.html#contact" class="btn">Book Free Consultation Now</a>
+      </div>
+
+      <!-- Hero Lead Form -->
+      <div class="hero-form hero-lead-form" id="hero-form">
+        <h3>Request a Free Roof Inspection</h3>
+        <form action="https://formsubmit.co/contact@versteraroofing.com" method="POST">
+          <div class="hero-lead-row">
+            <label class="visually-hidden" for="hero-first-name">First Name</label>
+            <input type="text" id="hero-first-name" name="first_name" placeholder="First Name*" autocomplete="given-name" required>
+            <label class="visually-hidden" for="hero-last-name">Last Name</label>
+            <input type="text" id="hero-last-name" name="last_name" placeholder="Last Name" autocomplete="family-name">
+          </div>
+          <label class="visually-hidden" for="hero-phone">Phone</label>
+          <input type="tel" id="hero-phone" name="phone" placeholder="Phone*" autocomplete="tel" required>
+          <label class="visually-hidden" for="hero-description">Project Description</label>
+          <textarea id="hero-description" name="project_description" placeholder="Project Description" rows="3"></textarea>
+          <label class="visually-hidden" for="hero-zip">Zip Code</label>
+          <input type="text" id="hero-zip" name="zip" placeholder="Zip Code*" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" autocomplete="postal-code" title="5-digit zip code" required>
+          <input type="hidden" name="_subject" value="New Lead: Homepage Hero Form">
+          <input type="hidden" name="form_source" value="Homepage hero form">
+          <input type="hidden" name="_next" value="https://versteraroofing.com/thanks.html">
+          <input type="text" name="_honey" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button type="submit" class="submit-btn">Send Inquiry</button>
+        </form>
+      </div>
     </div>
   </section>
 <!--Certifcations Ticker-->

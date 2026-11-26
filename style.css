@@ -681,6 +681,84 @@ footer {
     width: 100%;
 }
 
+/* Homepage hero lead form (compact, placeholder-style fields) */
+.visually-hidden {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.hero-lead-form {
+    width: 100%;
+    max-width: 420px;
+    justify-self: end;
+    padding: 24px;
+    text-align: left;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.hero-lead-form h3 {
+    color: var(--lime-11);
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+.hero-lead-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.hero-lead-form input,
+.hero-lead-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #c8cfc4;
+    border-radius: 4px;
+    background-color: #fff;
+    color: var(--lime-12);
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.hero-lead-form textarea {
+    min-height: 84px;
+    resize: vertical;
+}
+
+.hero-lead-form input:focus,
+.hero-lead-form textarea:focus {
+    outline: 2px solid var(--lime-9);
+    outline-offset: 0;
+    border-color: var(--lime-9);
+}
+
+.hero-lead-form .submit-btn {
+    margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+    .hero-lead-form {
+        justify-self: stretch;
+        max-width: none;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero-lead-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+
 /* Emergency notice styling */
 .emergency-notice {
     background-color: var(--lime-9);
