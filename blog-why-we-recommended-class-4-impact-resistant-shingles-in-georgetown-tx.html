@@ -25,37 +25,79 @@
 
   <!-- Schema: Article -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Why We Recommended Class 4 Impact Resistant Shingles for a Georgetown, TX Homeowner",
-    "description": "A real roofing case study explaining why Class 4 impact resistant shingles were the right fit for a retired Central Texas homeowner.",
-    "image": "https://www.versteraroofing.com/images/georgetown-class4-after.jpg",
-    "author": { "@type": "Organization", "name": "Verstera Roofing", "url": "https://www.versteraroofing.com" },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Verstera Roofing",
-      "logo": { "@type": "ImageObject", "url": "https://www.versteraroofing.com/images/logo.png" }
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Why We Recommended Class 4 Impact Resistant Shingles for a Georgetown, TX Homeowner",
+  "description": "A real roofing case study explaining why Class 4 impact resistant shingles were the right fit for a retired Central Texas homeowner.",
+  "image": "https://www.versteraroofing.com/images/georgetown-class4-after.jpg",
+  "author": {
+    "@type": "Organization",
+    "@id": "https://versteraroofing.com/#organization",
+    "name": "Verstera Roofing",
+    "url": "https://www.versteraroofing.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1101 S Capital of Texas Hwy Ste. H215",
+      "addressLocality": "West Lake Hills",
+      "addressRegion": "TX",
+      "postalCode": "78746",
+      "addressCountry": "US"
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://versteraroofing.com/#organization",
+    "name": "Verstera Roofing",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.versteraroofing.com/images/logo.png"
     },
-    "datePublished": "2025-11-15",
-    "dateModified": "2025-11-15",
-    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.versteraroofing.com/blog-why-we-recommended-class-4-impact-resistant-shingles-in-georgetown-tx.html" }
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1101 S Capital of Texas Hwy Ste. H215",
+      "addressLocality": "West Lake Hills",
+      "addressRegion": "TX",
+      "postalCode": "78746",
+      "addressCountry": "US"
+    }
+  },
+  "datePublished": "2025-11-15",
+  "dateModified": "2025-11-15",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.versteraroofing.com/blog-why-we-recommended-class-4-impact-resistant-shingles-in-georgetown-tx.html"
   }
-  </script>
+}
+</script>
 
   <!-- Schema: Local Business -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "RoofingContractor",
-    "name": "Verstera Roofing",
-    "url": "https://www.versteraroofing.com",
-    "telephone": "+1-512-540-6388",
-    "address": { "@type": "PostalAddress", "addressLocality": "Georgetown", "addressRegion": "TX", "addressCountry": "US" },
-    "areaServed": ["Georgetown, TX", "Round Rock, TX", "Cedar Park, TX", "Leander, TX", "Austin, TX"],
-    "description": "Verstera Roofing provides expert roof replacement, storm damage repair, and insurance claim guidance across Central Texas."
-  }
-  </script>
+{
+  "@type": "RoofingContractor",
+  "@id": "https://versteraroofing.com/#organization",
+  "@context": "https://schema.org",
+  "name": "Verstera Roofing",
+  "url": "https://www.versteraroofing.com",
+  "telephone": "+1-512-540-6388",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1101 S Capital of Texas Hwy Ste. H215",
+    "addressLocality": "West Lake Hills",
+    "addressRegion": "TX",
+    "postalCode": "78746",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    "Georgetown, TX",
+    "Round Rock, TX",
+    "Cedar Park, TX",
+    "Leander, TX",
+    "Austin, TX"
+  ],
+  "description": "Verstera Roofing provides expert roof replacement, storm damage repair, and insurance claim guidance across Central Texas."
+}
+</script>
 
   <!-- Schema: FAQ -->
   <script type="application/ld+json">
