@@ -1,3 +1,14 @@
+// Google tag (GTM-PDCFPMHJ), added to every page's head from here since all pages load this file
+(function() {
+    var gtmScript = document.createElement('script');
+    gtmScript.async = true;
+    gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-PDCFPMHJ';
+    document.head.appendChild(gtmScript);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+})();
+
 document.addEventListener('DOMContentLoaded', function() {
     const navigationHTML = `
         <div class="container header-content">
