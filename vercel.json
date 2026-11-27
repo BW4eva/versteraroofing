@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "api/nexoflow/blog.js": { "includeFiles": "{*.html,blog/*.html}" },
+    "api/nexoflow/post.js": { "includeFiles": "{*.html,blog/*.html}" },
+    "api/nexoflow/sitemap.js": { "includeFiles": "{sitemap.xml,*.html,blog/*.html}" }
+  },
+  "routes": [
+    { "src": "^/blog(?:\\.html)?$", "dest": "/api/nexoflow/blog" },
+    { "src": "^/sitemap\\.xml$", "dest": "/api/nexoflow/sitemap" },
+    { "handle": "filesystem" },
+    { "src": "^/([A-Za-z0-9_-]+)$", "dest": "/api/nexoflow/post?slug=$1" }
+  ]
+}
