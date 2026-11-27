@@ -440,6 +440,11 @@ footer {
     display: none;
 }
 
+/* The sticky Book Now bar is for phones only; it is shown in the mobile media query below */
+.sticky-mobile-nav {
+    display: none;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .blog-link {
