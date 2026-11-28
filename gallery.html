@@ -4,11 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Verstera Roofing project gallery. Expert residential and commercial roofing, repairs, and installations.">
+    <meta name="description" content="See recent Verstera Roofing projects: Class 4 hail resistant shingles, stone coated steel, and tile roofs in Austin, Georgetown, Harker Heights, and Temple, TX." />
+    <link rel="canonical" href="https://versteraroofing.com/gallery.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Roofing Project Gallery | Verstera Roofing" />
+    <meta property="og:description" content="See recent Verstera Roofing projects: Class 4 hail resistant shingles, stone coated steel, and tile roofs in Austin, Georgetown, Harker Heights, and Temple, TX." />
+    <meta property="og:url" content="https://versteraroofing.com/gallery.html" />
+    <meta property="og:image" content="https://versteraroofing.com/assets/austin_texas_class4_hail_resistant_rustic_cedar_shingles.JPG" />
+    <meta property="og:site_name" content="Verstera Roofing" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Roofing Project Gallery | Verstera Roofing" />
+    <meta name="twitter:description" content="See recent Verstera Roofing projects: Class 4 hail resistant shingles, stone coated steel, and tile roofs in Austin, Georgetown, Harker Heights, and Temple, TX." />
+    <meta name="twitter:image" content="https://versteraroofing.com/assets/austin_texas_class4_hail_resistant_rustic_cedar_shingles.JPG" />
     <meta name="keywords"
         content="roofing, Verstera Roofing roofing, Georgetown roofing, Round Rock roofing, roof repair Austin, Central Texas roofing company">
-    <title>Verstera Roofing - Project Gallery | Professional Roofing Services</title>
+    <title>Roofing Project Gallery | Verstera Roofing</title>
     <link rel="preload" href="assets/Verstera_roofing.webp" as="image" type="image/webp" fetchpriority="high">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="assets/logo_pix/logo.ico">
@@ -36,7 +50,7 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '1406885693928086');
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
+<noscript><img alt="" height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1406885693928086&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
@@ -518,7 +532,7 @@ src="https://www.facebook.com/tr?id=1406885693928086&ev=PageView&noscript=1"
             <button class="lightbox-close" id="lightbox-close">&times;</button>
             <button class="lightbox-nav lightbox-prev" id="lightbox-prev">&#8249;</button>
             <button class="lightbox-nav lightbox-next" id="lightbox-next">&#8250;</button>
-            <img id="lightbox-img" src="" alt="">
+            <img id="lightbox-img" src="" alt="Enlarged roofing project photo">
             <div class="lightbox-caption" id="lightbox-caption"></div>
         </div>
     </div>
@@ -560,6 +574,7 @@ src="https://www.facebook.com/tr?id=1406885693928086&ev=PageView&noscript=1"
         function updateLightboxImage() {
             const currentImage = images[currentImageIndex];
             lightboxImg.src = currentImage.src;
+            lightboxImg.alt = currentImage.caption;
             lightboxCaption.textContent = currentImage.caption;
         }
 
