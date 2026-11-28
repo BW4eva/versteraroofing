@@ -6,6 +6,7 @@ const path = require('path');
 const DEFAULT_API_URL = 'https://nexoflow.net';
 const SITE_URL = 'https://versteraroofing.com';
 const REVALIDATE_SECONDS = 300; // refresh NexoFlow data at most every 5 minutes
+const STRUCTURED_DATA_SECONDS = 3600; // structured data is kept for about an hour
 const PAGE_SIZE = 12;
 
 const cache = new Map();
@@ -16,13 +17,13 @@ function getConfig() {
   return { apiKey, apiUrl };
 }
 
-async function request(pathname) {
+async function request(pathname, timeoutMs = 8000) {
   const { apiKey, apiUrl } = getConfig();
   if (!apiKey) return { ok: false, status: 0, data: null };
   try {
     const res = await fetch(apiUrl + pathname, {
       headers: { Authorization: 'Bearer ' + apiKey, Accept: 'application/json' },
-      signal: AbortSignal.timeout(8000),
+      signal: AbortSignal.timeout(timeoutMs),
     });
     const data = res.ok ? await res.json() : null;
     return { ok: res.ok, status: res.status, data };
@@ -31,13 +32,13 @@ async function request(pathname) {
   }
 }
 
-// Successful answers are kept for REVALIDATE_SECONDS; failures are not kept.
-async function cached(cacheKey, load) {
+// Successful answers are kept for `seconds` (REVALIDATE_SECONDS by default); failures are not kept.
+async function cached(cacheKey, load, seconds = REVALIDATE_SECONDS) {
   const hit = cache.get(cacheKey);
   if (hit && hit.expires > Date.now()) return hit.value;
   const value = await load();
   if (value.ok || value.status === 404) {
-    cache.set(cacheKey, { value, expires: Date.now() + REVALIDATE_SECONDS * 1000 });
+    cache.set(cacheKey, { value, expires: Date.now() + seconds * 1000 });
   }
   return value;
 }
@@ -71,6 +72,21 @@ async function getPost(slug) {
   const result = await cached('post:' + pathname, () => request(pathname));
   if (!result.ok || !result.data) return null;
   return result.data.post || result.data;
+}
+
+// NexoFlow's JSON-LD for one page path ("/", "/residential-roofing.html"), or null
+// (no key, NexoFlow unavailable, or a page NexoFlow does not describe).
+async function getStructuredData(pagePath) {
+  const pathname = `/api/v1/content/structured-data?path=${encodeURIComponent(pagePath)}`;
+  const result = await cached('jsonld:' + pathname, () => request(pathname, 3000), STRUCTURED_DATA_SECONDS);
+  if (!result.ok || !result.data || !result.data.jsonld || typeof result.data.jsonld !== 'object') return null;
+  return result.data.jsonld;
+}
+
+// The <script> tag for a page's JSON-LD; every "</" is written "<\/" so the JSON can never close the tag.
+function structuredDataScript(jsonld) {
+  if (!jsonld) return '';
+  return `<script type="application/ld+json">${JSON.stringify(jsonld).replace(/<\//g, '<\\/')}</script>`;
 }
 
 // Uncached check used by /api/nexoflow/health.
@@ -151,6 +167,8 @@ module.exports = {
   listPosts,
   listAllPosts,
   getPost,
+  getStructuredData,
+  structuredDataScript,
   checkConnection,
   totalPages,
   readSiteFile,

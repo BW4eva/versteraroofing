@@ -3,6 +3,8 @@
 const {
   PAGE_SIZE,
   listPosts,
+  getStructuredData,
+  structuredDataScript,
   totalPages,
   readSiteFile,
   isExistingPage,
@@ -106,6 +108,15 @@ module.exports = async (req, res) => {
   // Page links go at the end of the blog posts section, below the grid.
   const sectionEnd = html.indexOf('</section>', html.indexOf('id="blog-posts"'));
   html = html.slice(0, sectionEnd) + renderPagination(page, pages) + html.slice(sectionEnd);
+
+  // NexoFlow's markup for the blog page, at its address /blog.html (also served at /blog).
+  if (page === 1) {
+    const structuredData = (await getStructuredData('/blog.html')) || (await getStructuredData('/blog'));
+    const headEnd = html.indexOf('</head>');
+    if (structuredData && headEnd !== -1) {
+      html = html.slice(0, headEnd) + `  ${structuredDataScript(structuredData)}\n` + html.slice(headEnd);
+    }
+  }
 
   if (page > 1) {
     html = html.replace(/<title>([^<]*)<\/title>/, (match, title) => `<title>${title} – Page ${page}</title>`);

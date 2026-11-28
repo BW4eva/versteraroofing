@@ -3,6 +3,8 @@
 const {
   SITE_URL,
   getPost,
+  getStructuredData,
+  structuredDataScript,
   readSiteFile,
   isExistingPage,
   escapeHtml,
@@ -21,7 +23,7 @@ function jsonLd(data) {
   return JSON.stringify(data, null, 2).replace(/</g, '\\u003c');
 }
 
-function renderPage({ title, description, robots, canonical, styles, body, schema }) {
+function renderPage({ title, description, robots, canonical, styles, body, schema, structuredData }) {
   const metaPixel = blogSection(/<!-- Meta Pixel Code -->[\s\S]*?<!-- End Meta Pixel Code -->/);
   return `<!DOCTYPE html>
 <html lang="en">
@@ -38,6 +40,7 @@ function renderPage({ title, description, robots, canonical, styles, body, schem
 
   ${metaPixel}
   ${schema ? `<script type="application/ld+json">\n${jsonLd(schema)}\n</script>` : ''}
+  ${structuredDataScript(structuredData)}
 </head>
 
 <body>
@@ -143,9 +146,12 @@ module.exports = async (req, res) => {
     mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
   };
 
+  // NexoFlow's markup for this page; null (nothing rendered) without a key or an answer.
+  const structuredData = await getStructuredData('/' + post.slug);
+
   res.statusCode = 200;
   cacheHeaders(res, true);
   res.setHeader('Content-Type', 'text/html; charset=utf-8');
   if (robots) res.setHeader('X-Robots-Tag', robots);
-  res.end(renderPage({ title, description, robots, canonical, styles: post.contentStyles, body, schema }));
+  res.end(renderPage({ title, description, robots, canonical, styles: post.contentStyles, body, schema, structuredData }));
 };
